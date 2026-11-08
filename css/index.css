@@ -775,3 +775,21 @@ footer {
   background: rgba(7, 9, 14, 0.9);
   backdrop-filter: blur(10px);
 }
+
+
+/* Comprehensive Nested SCSS for Justify Alignment on Long Paragraphs */
+.main-container {
+  .landing-section {
+    .section-grid {
+      .section-copy {
+        text-align: justify !important;
+        text-justify: inter-word !important;
+        -webkit-hyphens: auto !important;
+        -ms-hyphens: auto !important;
+        hyphens: auto !important;
+        letter-spacing: normal !important;
+        word-spacing: normal !important;
+      }
+    }
+  }
+}

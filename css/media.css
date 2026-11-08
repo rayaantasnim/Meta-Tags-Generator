@@ -1,0 +1,161 @@
+/* Responsive Media Query CSS3 for Mobile Devices */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 12px 16px !important;
+  }
+
+  .main-container {
+    padding: 20px 10px !important;
+    gap: 30px !important;
+  }
+
+  .landing-section {
+    padding: 20px 14px !important;
+    gap: 16px !important;
+    border-radius: 12px !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+    letter-spacing: -0.2px !important;
+  }
+
+  .section-copy {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .section-grid {
+    gap: 16px !important;
+  }
+
+  .section-img-wrapper {
+    height: 200px !important;
+  }
+
+  .neon-btn {
+    padding: 12px 20px !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 10px 12px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .dashboard-counter-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .counter-card {
+    padding: 16px !important;
+  }
+
+  .counter-value {
+    font-size: 1.5rem !important;
+  }
+
+  .overlay-panel {
+    width: 100% !important;
+    padding: 24px 20px !important;
+  }
+
+  footer {
+    padding: 24px 10px !important;
+    font-size: 0.75rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    padding: 12px 6px !important;
+    gap: 20px !important;
+  }
+
+  .landing-section {
+    padding: 16px 10px !important;
+    gap: 12px !important;
+  }
+
+  .section-title {
+    font-size: 1.25rem !important;
+  }
+
+  .section-copy {
+    font-size: 0.9rem !important;
+  }
+}
+
+
+/* Responsive Media Query CSS3: Vertical Table Transformation for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .comparison-table,
+  .comparison-table tbody,
+  .comparison-table tr,
+  .comparison-table th,
+  .comparison-table td {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .comparison-table {
+    border: none !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+  }
+
+  .comparison-table thead {
+    display: none !important;
+  }
+
+  .comparison-table tr {
+    margin-bottom: 16px !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 10px !important;
+    background: var(--fieldset-bg) !important;
+    overflow: hidden !important;
+  }
+
+  .comparison-table td {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 12px 16px !important;
+    text-align: right !important;
+    border-right: none !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    background: transparent !important;
+  }
+
+  .comparison-table td:last-child {
+    border-bottom: none !important;
+  }
+
+  /* Pseudo-element labels for vertical stack mapping */
+  .comparison-table td:nth-child(1)::before {
+    content: "Metric Attribute" !important;
+    font-family: "Fira Code", monospace !important;
+    font-weight: 700 !important;
+    color: var(--primary-neon) !important;
+    text-align: left !important;
+  }
+
+  .comparison-table td:nth-child(2)::before {
+    content: "Traditional Hosting" !important;
+    font-family: "Fira Code", monospace !important;
+    font-weight: 700 !important;
+    color: var(--text-muted) !important;
+    text-align: left !important;
+  }
+
+  .comparison-table td:nth-child(3)::before {
+    content: "Deploy-Free Stack" !important;
+    font-family: "Fira Code", monospace !important;
+    font-weight: 700 !important;
+    color: var(--secondary-neon) !important;
+    text-align: left !important;
+  }
+}
