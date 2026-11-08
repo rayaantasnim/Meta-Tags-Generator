@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Deploy-Free: Meta Tag Generator : Automated Production Compiler
+    </title>
+    <meta
+      name="description"
+      content="Generate production-ready SEO Meta Tags, Open Graph protocols, and Twitter Cards dynamically. Features real-time error validation, relative CSS directory tracking, and strict 00:00 UTC quota safeguards."
+    />
+    <meta
+      name="keywords"
+      content="Meta Tag Generator, Open Graph Compiler, Twitter Card Creator, SEO Optimization Tool, Subfolder CSS Validator, Automated Meta Code"
+    />
+    <meta name="author" content="Rayaan Tasnim" />
+
+    <!-- Open Graph Protocols (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Deploy-Free: Dynamic Meta Tag Generator Engine"
+    />
+    <meta
+      property="og:description"
+      content="Input your project metadata parameters and instantly compile structured head tags without layout formatting syntax errors."
+    />
+    <meta property="og:image" content="https://github.io" />
+    <meta property="og:url" content="https://github.io" />
+
+    <!-- Twitter / X Card Data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Deploy-Free: Meta Tag Generator | Open Source SEO Tool"
+    />
+    <meta
+      name="twitter:description"
+      content="Experience high-tech five seconds matrix loading compilation cycles with active anti-spam debounce and emergency abort configurations."
+    />
+    <meta name="twitter:image" content="https://github.io" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/meta.css" />
+  </head>
+  <body>
+    <header id="mainHeader">
+      <a href="#" class="logo">🚀 DEPLOY-FREE</a>
+
+      <div class="header-controls-wrapper">
+        <!-- Desktop Controls -->
+        <div class="header-status" id="desktopNavControls">
+          <div class="quota-badge quota-display-target">QUOTA: 5/5 LEFT</div>
+          <button
+            type="button"
+            class="mode-toggle-btn theme-toggle-target"
+            title="Toggle Theme"
+          >
+            ⚡
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button
+          type="button"
+          class="hamburger-btn"
+          id="hamburgerBtn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-nav-drawer" id="mobileDrawer">
+        <div class="mobile-drawer-row">
+          <span class="mobile-drawer-label">SYSTEM QUOTA</span>
+          <div class="quota-badge quota-display-target">QUOTA: 5/5 LEFT</div>
+        </div>
+        <div class="mobile-drawer-row">
+          <span class="mobile-drawer-label">INTERFACE THEME</span>
+          <button
+            type="button"
+            class="mode-toggle-btn theme-toggle-target"
+            title="Toggle Theme"
+          >
+            ⚡
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="limit-banner" id="limitBanner">
+      🛑 DAILY GENERATION LIMIT REACHED. REBOOTING THE MATRIX AT MIDNIGHT (00:00
+      UTC).
+    </div>
+
+    <main class="main-container">
+      <!-- SECTION 1: THE INPUT FORM -->
+      <section class="form-section" id="formSection">
+        <form id="metaForm" novalidate autocomplete="off">
+          <!-- Part 1: Core SEO Info -->
+          <fieldset>
+            <legend>Part 1: Core SEO Info</legend>
+
+            <div class="input-group">
+              <label for="siteTitle"
+                >Website Title <span class="hint">(10-100 chars)</span></label
+              >
+              <input
+                type="text"
+                id="siteTitle"
+                required
+                placeholder="e.g., AEGIS Medical Island | Sanctuary UI"
+              />
+              <span class="error-msg" id="err-siteTitle"
+                >Must be between 10 and 100 characters.</span
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="metaDesc"
+                >Meta Description
+                <span class="hint">(50-300 chars)</span></label
+              >
+              <textarea
+                id="metaDesc"
+                required
+                placeholder="e.g., High-tech biophilic sovereign sanctuary UI platform built for next-generation architecture..."
+              ></textarea>
+              <span class="error-msg" id="err-metaDesc"
+                >Must be between 50 and 300 characters.</span
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="keywords"
+                >Keywords
+                <span class="hint"
+                  >(Minimum 5 comma-separated, unlimited max)</span
+                ></label
+              >
+              <input
+                type="text"
+                id="keywords"
+                required
+                placeholder="e.g., cyberpunk, neon, dashboard, architecture, dark theme"
+              />
+              <span class="error-msg" id="err-keywords"
+                >Provide at least 5 comma-separated keywords.</span
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="authorName"
+                >Author Name
+                <span class="hint"
+                  >(Alphanumeric allowed, letters required)</span
+                ></label
+              >
+              <input
+                type="text"
+                id="authorName"
+                required
+                placeholder="e.g., Rayaan Tasnim (or Agent007)"
+              />
+              <span class="error-msg" id="err-authorName"
+                >Author name cannot consist purely of numbers.</span
+              >
+            </div>
+          </fieldset>
+
+          <!-- Part 2: Open Graph Protocols -->
+          <br /><br />
+          <fieldset>
+            <legend>Part 2: Open Graph Protocols</legend>
+
+            <div class="input-group">
+              <label for="ogTitle">OG Title</label>
+              <input
+                type="text"
+                id="ogTitle"
+                required
+                placeholder="e.g., AEGIS Sovereign Sanctuary Portal"
+              />
+              <span class="error-msg" id="err-ogTitle"
+                >This field is required.</span
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="ogDesc">OG Description</label>
+              <textarea
+                id="ogDesc"
+                required
+                placeholder="e.g., Explore the biophilic dark neon interface architecture for sovereign systems."
+              ></textarea>
+              <span class="error-msg" id="err-ogDesc"
+                >This field is required.</span
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="ogImage"
+                >OG Thumbnail Image URL
+                <span class="hint">(http:// or https://)</span></label
+              >
+              <input
+                type="url"
+                id="ogImage"
+                required
+                placeholder="https://example.com/assets/og-banner.png"
+              />
+              <span class="error-msg" id="err-ogImage"
+                >Enter a valid URL starting with http:// or https://</span
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="ogUrl"
+                >OG Site URL
+                <span class="hint">(http:// or https://)</span></label
+              >
+              <input
+                type="url"
+                id="ogUrl"
+                required
+                placeholder="https://aegis-medical.io"
+              />
+              <span class="error-msg" id="err-ogUrl"
+                >Enter a valid URL starting with http:// or https://</span
+              >
+            </div>
+          </fieldset>
+
+          <!-- Part 3: Twitter / X Card Data -->
+          <br /><br /><br />
+          <fieldset>
+            <legend>Part 3: Twitter / X Card Data</legend>
+
+            <div class="input-group">
+              <label for="twTitle">Twitter Card Title</label>
+              <input
+                type="text"
+                id="twTitle"
+                required
+                placeholder="e.g., AEGIS Medical Island UI System"
+              />
+              <span class="error-msg" id="err-twTitle"
+                >This field is required.</span
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="twDesc">Twitter Card Description</label>
+              <textarea
+                id="twDesc"
+                required
+                placeholder="e.g., High-performance dark neon interface framework for luxury web portals."
+              ></textarea>
+              <span class="error-msg" id="err-twDesc"
+                >This field is required.</span
+              >
+            </div>
+          </fieldset>
+
+          <!-- Part 4: External CSS Links & Core Libraries -->
+          <br /><br /><br />
+          <fieldset>
+            <legend>Part 4: External CSS Links & Core Libraries</legend>
+            <div class="input-group">
+              <label
+                >External CSS File Links
+                <span class="hint"
+                  >(Optional: Subfolders and relative paths allowed)</span
+                ></label
+              >
+              <div class="css-input-wrapper" id="cssInputWrapper">
+                <!-- Standard default single input on page load -->
+                <div class="css-input-row">
+                  <input
+                    type="text"
+                    class="css-path-input"
+                    placeholder="e.g., styles.css or assets/css/main.css"
+                  />
+                  <span class="error-msg css-error"
+                    >Please enter a valid URL or path.</span
+                  >
+                </div>
+              </div>
+              <button type="button" id="btnAddCss" class="btn-add-css">
+                Add More CSS File +
+              </button>
+            </div>
+          </fieldset>
+
+          <!-- Action Controls Grid -->
+          <br /><br />
+          <div class="action-button-grid">
+            <button
+              type="submit"
+              id="btnGenerate"
+              class="btn btn-primary"
+              disabled
+            >
+              FILL REQUIRED FIELDS ⚡
+            </button>
+            <button type="button" id="btnRefreshAll" class="btn btn-refresh">
+              REFRESH ALL 🔄
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- SECTION 2: DYNAMIC OUTPUT BOX -->
+      <section class="output-section" id="outputCard">
+        <p class="output-intro">
+          Your production-ready head tag is compiled successfully. Copy the raw
+          codebase directly and paste it into your repository source file.
+        </p>
+
+        <div class="code-block-wrapper">
+          <pre id="codeOutput"></pre>
+        </div>
+
+        <div class="output-utility-grid">
+          <button type="button" id="btnCopy" class="btn btn-copy">
+            COPY TO CLIPBOARD 📋
+          </button>
+          <button type="button" id="btnGenerateAgain" class="btn btn-again">
+            REGENERATE 🔄
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- DUAL PROGRESS BAR AND ULTRASHORT LOADER OVERLAY INTERFACE -->
+    <div class="loader-overlay" id="loaderOverlay">
+      <div class="loader-card">
+        <!-- Component A: Circle Progress Bar (Timer Track) -->
+        <div class="circle-progress-wrapper">
+          <svg class="circle-svg" viewBox="0 0 100 100">
+            <circle class="circle-bg" cx="50" cy="50" r="42"></circle>
+            <circle
+              class="circle-fill"
+              id="circleFill"
+              cx="50"
+              cy="50"
+              r="42"
+            ></circle>
+          </svg>
+          <div class="circle-timer-text" id="circleTimerText">5s</div>
+        </div>
+
+        <!-- Component B: Horizontal Linear Progress Bar (Logic Track) -->
+        <div class="linear-progress-wrapper">
+          <div class="linear-progress-bar" id="linearProgressBar"></div>
+        </div>
+
+        <!-- Glowing Status Layout Text -->
+        <div class="loader-status-text" id="loaderStatusText">
+          Initializing matrix core...
+        </div>
+
+        <!-- Abort Protocol Button -->
+        <button type="button" id="btnAbort" class="btn-abort">
+          ABORT COMPILATION 🛑
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Authorized by Rayaan Tasnim <br />
+        © All Rights Reserved
+      </p>
+      <p>
+        Dedicated for all developers worldwide <br />
+        Powered by IDAI Universe
+      </p>
+    </footer>
+
+    <script src="js/generate.js"></script>
+    <script src="js/meta-tags.js"></script>
+  </body>
+</html>
